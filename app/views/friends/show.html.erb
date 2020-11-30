@@ -1,38 +1,17 @@
+<br>
 <p id="notice"><%= notice %></p>
 
 
 <div class="jumbotron">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <h1 class="display-4"><%= @friend.first_name %></h1>
+  <h2><%= @friend.last_name %></h2>
   <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <p> <%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %></p>
+ <!--  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+ <%= link_to 'Edit', edit_friend_path(@friend),class:"btn btn-dark" %> 
+<%= link_to 'Back', friends_path,class:"btn btn-info" %>
+
 </div>
 
-<p>
-  <strong>First name:</strong>
-  <%= @friend.first_name %>
-</p>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @friend.last_name %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @friend.email %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @friend.phone %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @friend.twitter %>
-</p>
-
-<%= link_to 'Edit', edit_friend_path(@friend),class:"btn btn-dark" %> |
-<%= link_to 'Back', friends_path,class:"btn btn-info" %>
