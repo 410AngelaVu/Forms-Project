@@ -7,13 +7,17 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+         <%= link_to 'Friends', friends_path, class:'nav-link' %>
+       <!--  <a class="nav-link" href="#">Link</a> -->
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Add a Friend', new_friend_path, class:'nav-link' %>
+      <!--  <a class="nav-link" href="#">Link</a> -->
+        </li>
       <li class="nav-item active">
         <%= link_to 'About Us', home_about_path, class:'nav-link' %>
         <!-- <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> -->
-      </li>
-      <li class="nav-item">
-         <%= link_to 'Friends', home_about_path, class:'nav-link' %>
-       <!--  <a class="nav-link" href="#">Link</a> -->
       </li>
     </ul>
   </div>
