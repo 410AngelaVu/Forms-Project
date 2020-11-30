@@ -1,8 +1,9 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Form
+# Forms Project
 
-> One paragraph statement about the project.
+> In this project we created a Form to gather information such as
+> First Name, Last Name, Email, Phone, Twitter
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,50 +11,40 @@ Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- Ruby
+- Ruby on Rails
+- Bootstrap
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
+**First get at copy of the project by clicking on the green button on the top right corner**
+**On your local machine run this command `git clone git@github.com:410AngelaVu/Forms-Project.git`
+then type `cd Forms-Project` and that will get you inside the project. **
 
 ### Prerequisites
 
-### Setup
+- Need to have Ruby install
+- Rails
+- Use the Starter Template from Bootstrap
 
 ### Install
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+    Run `bundle install` to install of the gems and dependecies for the project to run
+    Before you use the projec run `rails db:migrate` to get all of the table for the database ready
 
 ## Authors
 
-👤 **Author1**
+👤 **Angela Vukadinovic**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [https://github.com/410AngelaVu]
+- Twitter: [https://twitter.com/andjelavukadin7]
+- LinkedIn: [https://www.linkedin.com/in/andjela-vukadinovic-67a21b1b2/]
 
-👤 **Author2**
+👤 **Devkc**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- Github: [@cvilla714](https://github.com/cvilla714)
+- Twitter: [@kckeyti](https://twitter.com/kckeyti)
+- Linkedin: [linkedin Profile](https://www.linkedin.com/in/cosmel-villalobos-1900531aa/)
 
 ## 🤝 Contributing
 
@@ -64,13 +55,3 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](lic.url) licensed.
