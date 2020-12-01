@@ -1,15 +1,51 @@
-<%= form_tag friends_path do %>
-  <% if friend.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(friend.errors.count, "error") %> prohibited this friend from being saved:</h2>
+<%# form_tag friends_path do %>
 
-      <ul>
-        <% friend.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%# <div class="field form-group"> %>
+   <%# <label>First Name:</label> %>
+   <%# <br> %>
+   <%# text_field_tag :'friend[first_name]' %>
+  <%# </div> %>
+
+  <%# <div class="field form-group"> %>
+    <%# <label>Last Name:</label> %>
+   <%# <br> %>
+   <%# text_field_tag :'friend[last_name]' %>
+  <%# </div> %>
+
+  <%# <div class="field form-group"> %>
+      <%# <label>Email:</label> %>
+   <%# <br> %>
+   <%# email_field_tag :'friend[email]' %> 
+  <%# </div> %>
+
+  <%# <div class="field form-group"> %>
+    <%# <label>Phone:</label> %>
+   <%# <br> %>
+   <%# text_field_tag :'friend[phone]' %>
+    
+  <%# </div> %>
+
+  <%# <div class="field form-group"> %>
+    <%# <label>Twitter:</label> %>
+   <%# <br> %>
+   <%# text_field_tag :'friend[twitter]' %>
+    
+  <%# </div> %>
+
+   <%# <div class="field form-group"> %>
+    <%# <label>Password:</label> %>
+   <%# <br> %>
+   <%# text_field_tag :'friend[password]' %>
+   
+  <%# </div> %>
+
+  <%# <div class="actions"> %>
+    <%# submit_tag 'Create Friend' %>
+  <%# </div> %>
+<%# end %>
+
+
+<%= form_for @friend do %>
 
   <div class="field form-group">
    <label>First Name:</label>
@@ -54,3 +90,4 @@
     <%= submit_tag 'Create Friend' %>
   </div>
 <% end %>
+
