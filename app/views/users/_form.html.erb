@@ -1,21 +1,21 @@
 <%# form_tag users_path do %>
 
   <%# <div class="field"> %>
-    <%# <label> Username:</label> %>
+     <%# label_tag 'Username' %>
    <%# <br> %>
    <%# text_field_tag :'user[username]' %>
   <%# </div> %>
 <%# <br> %>
   <%# <div class="field"> %>
-     <%# <label>Email:</label> %>
+      <%# label_tag 'Email' %>
    <%# <br> %>
    <%# email_field_tag :'user[email]' %>
   <%# </div> %>
 <%# <br> %>
   <%# <div class="field"> %>
-     <%# <label>Password:</label> %>
+      <%# label_tag 'Password' %>
    <%# <br> %>
-   <%# text_field_tag :'user[password]' %>
+   <%# password_field_tag :'user[password]' %>
   <%# </div> %>
   <%# <br>  %>
 <%# <div class="field"> %>
@@ -24,27 +24,27 @@
 <%# end %>
 
 
-<%= form_for @user do %>
+<%= form_for @user do |f| %>
 
   <div class="field">
-    <label> Username:</label>
+    <%= f.label :username %>
    <br>
-   <%= text_field_tag :'user[username]' %>
+   <%= f.text_field :username %>
   </div>
     <br>
   <div class="field">
-     <label>Email:</label>
+     <%= f.label :email %>
    <br>
-   <%= email_field_tag :'user[email]' %>
+     <%= f.email_field :email %>
   </div>
 <br>
   <div class="field">
-     <label>Password:</label>
+     <%= f.label :password%>
    <br>
-   <%= text_field_tag :'user[password]' %>
+     <%= f.password_field :password %>
   </div>
   <br> 
 <div class="field">
-  <%= submit_tag("Create User") %>
+  <%= f.submit("Create User") %>
   </div>
 <% end %>

@@ -45,49 +45,49 @@
 <%# end %>
 
 
-<%= form_for @friend do %>
+<%= form_for @friend do |f| %>
 
   <div class="field form-group">
-   <label>First Name:</label>
+   <%= f.label :First_Name %>
    <br>
-   <%= text_field_tag :'friend[first_name]' %>
+    <%= f.text_field :first_name %>
   </div>
 
   <div class="field form-group">
-    <label>Last Name:</label>
+     <%= f.label :Last_Name %>
    <br>
-   <%= text_field_tag :'friend[last_name]' %>
+  <%= f.text_field :last_name %>
   </div>
 
   <div class="field form-group">
-      <label>Email:</label>
+       <%= f.label :Email %>
    <br>
-   <%= email_field_tag :'friend[email]' %> 
+    <%= f.email_field :email %>
   </div>
 
   <div class="field form-group">
-    <label>Phone:</label>
+     <%= f.label :Phone %>
    <br>
-   <%= text_field_tag :'friend[phone]' %>
+   <%= f.phone_field :phone %>
     
   </div>
 
   <div class="field form-group">
-    <label>Twitter:</label>
+     <%= f.label :Twitter %>
    <br>
-   <%= text_field_tag :'friend[twitter]' %>
+   <%= f.text_field :twitter %>
     
   </div>
 
    <div class="field form-group">
-    <label>Password:</label>
+     <%= f.label :Password %>
    <br>
-   <%= text_field_tag :'friend[password]' %>
+    <%= f.password_field :password %>
    
   </div>
 
   <div class="actions">
-    <%= submit_tag 'Create Friend' %>
+    <%= f.submit 'Create Friend' %>
   </div>
 <% end %>
 
