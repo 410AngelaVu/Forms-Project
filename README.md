@@ -31,6 +31,7 @@ then type `cd Forms-Project` and that will get you inside the project. **
 
     Run `bundle install` to install of the gems and dependecies for the project to run
     Before you use the projec run `rails db:migrate` to get all of the table for the database ready
+    To run the application just run `rails s` and open a brower and go to localhost:3000 and you will see the app
 
 ## Authors
 
