@@ -1,19 +1,29 @@
-<p id="notice"><%= notice %></p>
+<br/><br/>
 
-<p>
-  <strong>Username:</strong>
-  <%= @user.username %>
-</p>
+<div class="jumbotron">
+  <h1 class="display-4"><%= @user.username %></h1>
+  <hr class="my-4">
+  <p> <%= @user.email %> | <%= @user.password %>
+  <br/><br/>
+    <%= link_to 'Edit', edit_user_path(@user),class:"btn btn-success" %> 
+    <%= link_to 'Back', users_path,class:"btn btn-success" %>
+</div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
 
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
+<%# <p> %>
+  <%# <strong>Username:</strong> %>
+  <%# @user.username %>
+<%# </p> %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%# <p> %>
+  <%# <strong>Email:</strong> %>
+  <%# @user.email %>
+<%# </p> %>
+
+<%# <p> %>
+  <%# <strong>Password:</strong> %>
+  <%# @user.password %>
+<%# </p> %>
+
+<%# link_to 'Edit', edit_user_path(@user),class:'btn btn-success' %> 
+<%# link_to 'Back', users_path,class:'btn btn-success' %>

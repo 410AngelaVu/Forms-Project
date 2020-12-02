@@ -1,5 +1,4 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-<!--   <a class="navbar-brand" href="#">Navbar</a> -->
 <%= link_to 'Friends App', root_path, class:'navbar-brand' %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,7 +8,6 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
          <%= link_to 'Friends', friends_path, class:'nav-link' %>
-       <!--  <a class="nav-link" href="#">Link</a> -->
       </li>
       <li class="nav-item">
         <%= link_to 'Add a Friend', new_friend_path, class:'nav-link' %>
@@ -18,8 +16,11 @@
         <%= link_to 'About Us', home_about_path, class:'nav-link' %>
       </li>
        <li class="nav-item active">
+        <%= link_to 'List Of Users', users_path, class:'nav-link' %>
+      </li> 
+       <li class="nav-item active">
         <%= link_to 'Create New User', new_user_path, class:'nav-link' %>
-      </li>
+        </li>
     </ul>
   </div>
 </nav>
