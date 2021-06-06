@@ -1,0 +1,50 @@
+<%# form_tag users_path do %>
+
+  <%# <div class="field"> %>
+     <%# label_tag 'Username' %>
+   <%# <br> %>
+   <%# text_field_tag :'user[username]' %>
+  <%# </div> %>
+<%# <br> %>
+  <%# <div class="field"> %>
+      <%# label_tag 'Email' %>
+   <%# <br> %>
+   <%# email_field_tag :'user[email]' %>
+  <%# </div> %>
+<%# <br> %>
+  <%# <div class="field"> %>
+      <%# label_tag 'Password' %>
+   <%# <br> %>
+   <%# password_field_tag :'user[password]' %>
+  <%# </div> %>
+  <%# <br>  %>
+<%# <div class="field"> %>
+  <%# submit_tag("Create User") %>
+  <%# </div> %>
+<%# end %>
+
+
+<%= form_for @user do |f| %>
+<%= render 'displayerrors'%>
+  <div class="field">
+    <%= f.label :username %>
+   <br>
+   <%= f.text_field :username %>
+  </div>
+    <br>
+  <div class="field">
+     <%= f.label :email %>
+   <br>
+     <%= f.email_field :email %>
+  </div>
+<br>
+  <div class="field">
+     <%= f.label :password%>
+   <br>
+     <%= f.password_field :password %>
+  </div>
+  <br> 
+<div class="field">
+  <%= f.submit("Create User") %>
+  </div>
+<% end %>
