@@ -14,6 +14,11 @@ Additional description about the project and its features.
 - Ruby
 - Ruby on Rails
 - Bootstrap
+- PostgreSQL
+
+## Live Demo
+
+- [Live Demo Link](https://murmuring-mountain-77716.herokuapp.com/friends)
 
 ## Getting Started
 
@@ -37,21 +42,21 @@ then type `cd Forms-Project` and that will get you inside the project. **
 
 👤 **Angela Vukadinovic**
 
-- GitHub: [https://github.com/410AngelaVu]
-- Twitter: [https://twitter.com/andjelavukadin7]
-- LinkedIn: [https://www.linkedin.com/in/andjela-vukadinovic-67a21b1b2/]
+- GitHub: [@410AngelaVu](https://github.com/410AngelaVu)
+- Twitter: [andjelavukadin](https://twitter.com/andjelavukadin7)
+- LinkedIn: [Angela Vukadinovic](https://www.linkedin.com/in/angela-vukadinovic-67a21b1b2/)
 
-👤 **Devkc**
+👤 **Cosmel Villalboos**
 
 - Github: [@cvilla714](https://github.com/cvilla714)
 - Twitter: [@kckeyti](https://twitter.com/kckeyti)
-- Linkedin: [linkedin Profile](https://www.linkedin.com/in/cosmel-villalobos-1900531aa/)
+- Linkedin: [Cosmel Villalobos](https://www.linkedin.com/in/cosvilla/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/410AngelaVu/Forms-Project/pulls).
 
 ## Show your support
 
